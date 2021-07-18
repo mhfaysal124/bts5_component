@@ -337,7 +337,7 @@
 
     <!--Button start-->
     <section class="Button">
-      <div class="container mb-3 py-4">
+      <div class="container mb-3 py-4 bg-dark">
         <h2 class="header_2 border border-2 p-2">__Button :
           <i class="h5">#Examles, #Outline buttons, #Sizes, #Block buttons</i>
         </h2>
@@ -376,22 +376,164 @@
 
     <!--Button group start-->
     <section class="Button group">
-      <div class="container mb-3 py-4">
+      <div class="container mb-3 py-4 bg-dark">
         <h2 class="header_2 border border-2 p-2">__Button group :
-          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+          <i class="h5">#Mixed styles, #Button toolbar, #Nesting, #Vertical variation</i>
         </h2>
         <!--Row / col start-->
-        <div class="btn-group" fole="group" aria-label="Basic mixed styles example">
-          <button type="button" class="btn btn-danger">mhfaysal</button>
-          <button type="button" class="btn btn-warning">mhfaysal</button>
-          <button type="button" class="btn btn-info">mhfaysal</button>
-        </div>
 
+        <div class="row">
+          <div class="col-10">
+            <div class="btn-group" fole="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">mhfaysal</button>
+              <button type="button" class="btn btn-warning">mhfaysal</button>
+              <button type="button" class="btn btn-info">mhfaysal</button>
+            </div><hr>
+    
+            <div class="btn-toolbar mb-3 justify-content-center" role="toolbar" aria-level="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-secondary">1</button>
+                <button type="button" class="btn btn-outline-secondary">2</button>
+                <button type="button" class="btn btn-outline-secondary">3</button>
+                <button type="button" class="btn btn-outline-secondary">4</button>
+              </div>
+              <div class="input-group">
+                <div class="input-group-text" id="btn_addon_1">@</div>
+                <input type="text" class="form-control" placeholder="Input your group example" aria-describedby="btn_addon_1">
+              </div>
+            </div>
+            <hr>
+    
+            <div class="btn-group btn-group-lg" fole="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">mhfaysal</button>
+              <button type="button" class="btn btn-warning">mhfaysal</button>
+              <button type="button" class="btn btn-info">mhfaysal</button>
+            </div>
+            <div class="btn-group me-5 ms-5" fole="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">mhfaysal</button>
+              <button type="button" class="btn btn-warning">mhfaysal</button>
+              <button type="button" class="btn btn-info">mhfaysal</button>
+            </div>
+            <div class="btn-group btn-group-sm" fole="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">mhfaysal</button>
+              <button type="button" class="btn btn-warning">mhfaysal</button>
+              <button type="button" class="btn btn-info">mhfaysal</button>
+            </div>
+            <hr>
+    
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-warning">Button-1</button>
+              <button type="button" class="btn btn-outline-warning">Button-2</button>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-warning dropdown-toggle" id="btn_group_drop1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btn_group_drop1">
+                  <li><a href="#" class="dropdown-item">Linke ....... 1</a></li>
+                  <li><a href="#" class="dropdown-item">Linke ....... 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 border-start">
+            <div class="btn-group btn-group-lg btn-group-vertical" fole="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">mhfaysal</button>
+              <button type="button" class="btn btn-warning">mhfaysal</button>
+              <div class="btn-group" role="group">
+                <button id="btn_group_drop_2" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btn_group_drop_2">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-info">mhfaysal</button>
+              <button type="button" class="btn btn-danger">mhfaysal</button>
+              <button type="button" class="btn btn-warning">mhfaysal</button>
+            </div>
+          </div>
+        </div>
+        
         <!--Row / col End-->
       </div>
     </section>
     <!--Button group End-->
 
+    <!--Cards start-->
+    <section class="Cards">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Cards :
+          <i class="h5">#Example, #List groups, #Navigation</i>
+        </h2>
+        <!--Row / col start-->
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <img src="img/eee.jpg" class="card-img-top" alt="img">
+              <div class="card-body">
+                <h5 class="card-title">MH Faysal</h5>
+                <h6 class="card-subtitle mb-2 text-muted">__is a Developer</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur mollitia facilis <strong>MH_Faysal</strong> laudantium sequi</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <h5 class="card-header">
+                Card Header
+              </h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"> A card list groups</li>
+                <li class="list-group-item"> A card list groups</li>
+                <li class="list-group-item"> A card list groups</li>
+                <li class="list-group-item"> A card list groups</li>
+                <li class="list-group-item"> A card list groups</li>
+              </ul>
+              <h5 class="card-footer">
+                Card Footer
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>          
+        </div><hr>
+
+        <div class="card text-center" style="width: 100%;">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="true">Active</a>
+              </li>
+              <li><a href="#" class="nav-link">Link</a></li>
+              <li><a href="#" class="nav-link disabled">Disabled</a></li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card body title gose here.</h5>
+            <p class="card-text">Lorem ipsum dolor <strong>MH Faysal</strong> <code>__is a web developer</code> sit amet.</p>
+            <a href="#" class="btn btn-danger">Go Somewhere</a>
+          </div>
+        </div>
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Cards End-->
 
 
 
