@@ -466,7 +466,7 @@
     <section class="Cards">
       <div class="container mb-3 py-4">
         <h2 class="header_2 border border-2 p-2">__Cards :
-          <i class="h5">#Example, #List groups, #Navigation</i>
+          <i class="h5">#Example, #List groups, #Navigation, #Image overlays, #Horizontal, #Card styles</i>
         </h2>
         <!--Row / col start-->
         <div class="row">
@@ -501,16 +501,19 @@
           </div>
 
           <div class="col-4">
-            <div class="card">
-              <div class="card-header">
-                Featured
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body bg-info">
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
             </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
           </div>          
         </div><hr>
 
@@ -525,9 +528,35 @@
             </ul>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Card body title gose here.</h5>
-            <p class="card-text">Lorem ipsum dolor <strong>MH Faysal</strong> <code>__is a web developer</code> sit amet.</p>
+            <h5 class="card-title h2">Card body title gose here.</h5>
+            <p class="card-text h6">Lorem ipsum dolor <strong>MH Faysal</strong> <code>__is a web developer</code> sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt, fuga, nam suscipit mollitia ab consectetur veritatis cumque labore esse rerum quia Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ea, sint tempora, fugit deleniti delectus iusto nisi temporibus eius dolorum quis recusandae asperiores quibusdam similique dolores laboriosam corrupti est aperiam. nostrum quasi et quibusdam excepturi numquam cum illo!</p>
             <a href="#" class="btn btn-danger">Go Somewhere</a>
+          </div><hr>
+
+          <div class="card bg-primary text-white w-100">
+            <img src="img/black_img.png " class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Image overlays</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, delectus laborum? Nulla, illum temporibus. Excepturi, esse quisquam! Magni animi hic reiciendis, excepturi magnam aut nobis! Laudantium est nostrum enim tempore.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="card mb-3 w-75">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="img/eee.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body py-4">
+                  <h5 class="card-title">#Horizontal Card</h5>
+                  <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi minus reiciendis facere praesentium ipsa ea non maiores, similique provident tempore incidunt esse accusamus amet ullam officia This is a wider card with ead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text pb-1"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!--Row / col End-->
