@@ -26,3 +26,18 @@ body{
     padding: 1rem 1.25rem;
     background-color: black;
 }
+
+.card{
+    width: 18rem;
+    background-color: #291919;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background-color: #442b2b;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff;
+    background-color: #442b2b;
+    border-color: #080505 #080505 #442b2b;
+}
