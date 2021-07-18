@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(104, 102, 102);
+    color: rgb(228, 226, 226);
+}
+.header_h1{
+    text-align: center;
+}
+.header_2{
+    color: rgb(223, 215, 215);
+    border-radius: 50px 0 0;
+    background-color: olive;
+}
+.container{
+    background-color: gray;
+}
+.accordion-button{
+    background-color: rgb(88, 85, 85);
+    color: rgb(229, 226, 226);
+}
+.accordion-button:not(.collapsed) {
+    color: #0ce454;
+    background-color: #535558;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-body {
+    padding: 1rem 1.25rem;
+    background-color: black;
+}

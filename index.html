@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>BTS_component</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="header_h1 py-2">__Component__</h1>
+    </div><hr>
+
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">Example: Flush, Always open</i>
+        </h2>
+
+        <!--Row / col start-->
+        <div class="accordion" id="accordion_example">
+          <!--according item one start-->
+          <h2>Example</h2>
+          <div class="accordion-item"> 
+            <h2 class="accordion-header" id="heading_one">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_one" aria-expanded="true" aria-controls="collapse_one">
+                Accordion Item one
+              </button>
+            </h2>
+            <div id="collapse_one" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe expedita quo temporibus vitae, rem numquam facere <code>Lorem ipsum dolor sit amet.</code> perspiciatis animi tempore dolorum nulla accusantium deserunt sapiente omnis exercitationem quae magnam vel? <code>.accordion-body</code>, Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div> 
+          <!--according item one end-->
+          <!--according item two start-->
+          <div class="accordion-item"> 
+            <h2 class="accordion-header" id="heading_two">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_two" aria-expanded="true" aria-controls="collapse_two">
+                Accordion Item tow
+              </button>
+            </h2>
+            <div id="collapse_two" class="accordion-collapse collapse show" aria-labelledby="heading_two" data-bs-parent="#accordion_example">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, maiores! Illo qui debitis praesentium optio sequi iste earum doloribus? Eos odio reprehenderit optio quo. Ullam facilis dolore itaque similique voluptatibus! <strong> <code>MH Faysal </code> is a web designer and developer</strong>
+              </div>
+            </div>
+          </div>
+          <!--according item two End-->
+          <!--according item three start-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_three">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_three" aria-expanded="false" aria-controls="collapse_three">
+                Accordion Item three
+              </button>
+            </h2>
+            <div id="collapse_three" class="accordion-collapse collapse" aria-labelledby="heading_three" data-bs-parent="#accordion_example">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <!--according item three End-->
+        </div><hr>
+        <!--Row / col End-->
+        <!--Flush and always open Row / col Start-->
+        <div class="row">
+          <div class="col-6">
+            <h2>Flush</h2>
+            <div class="accordion accordion-flush" id="acc_flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush_heading_one">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush_collapse_one" aria-expanded="false" aria-controls="flush_collapse_one">
+                    Accordion Flush item 1
+                  </button>
+                </h2>
+                <div id="flush_collapse_one" class="accordion-collapse collapse show" aria-labelledby="flush_heading_one" data-bs-parent="#acc_flush">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Flush item 2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#acc_flush">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Flush item 3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#acc_flush">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Always open col start-->
+          <div class="col-6">
+            <h2>Always open</h2>
+            <div class="accordion" id="accordion_always_open_example">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="open_heading_one">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#open_collaps_one" aria-expanded="true" aria-controls="open_collaps_one">
+                    Accordion Always open itme 1
+                  </button>
+                </h2>
+                <div id="open_collaps_one" class="accordion-collapse collapse show" aria-labelledby="open_heading_one">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.according-always-open</code> class. This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="open_heading_two">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#open_collapse_two" aria-expanded="false" aria-controls="open_collapse_two">
+                    Accordion Always open item 2
+                  </button>
+                </h2>
+                <div id="open_collapse_two" class="accordion-collapse collapse" aria-labelledby="open_heading_two">
+                  <div class="accordion-body">
+                    <strong>Accordion always open itme two</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo id, itaque atque qui aperiam officia quas nulla repudiandae, <code>Developer MH Faysal.</code> in deserunt quo saepe consequuntur vitae, ad doloribus. Tempora qui eos hic.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="open_heading_three">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#open_collapse_three" aria-expanded="false" aria-controls="open_collapse_three">
+                    Accordion Always open item 3
+                  </button>
+                </h2>
+                <div id="open_collapse_three" class="accordion-collapse collapse" aria-labelledby="open_heading_three">
+                  <div class="accordion-body">
+                    <strong>Accodion always open itme three</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. <Code>Frontend Designer MH Faysal</Code> Tempora cum veniam inventore nam debitis tempore porro laborum! Quidem, laboriosam veniam? Ipsam non sed excepturi reprehenderit, et cupiditate provident repudiandae nemo?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+
+    <!--Alerts start-->
+    <section class="Alerts">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Alerts :
+          <i class="h5">Example: Link color, Additiobal content, Icons, Dismissing.</i>
+        </h2>
+        <!--Row / col start-->
+        
+        <h2>Examples</h2>
+        <div class="alert alert-success" role="alert">
+          A simple success alert
+        </div>
+        <div class="alert alert-primary" role="alert">
+          A simple primary alert
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h2>Link color</h2>
+            <div class="alert alert-dark" role="alert">
+              A simple alert with <a href="http://www.facebook.com/mhfaysal124" class="alert-link">an example link</a> Click here if you want.
+            </div>
+            <div class="alert alert-primary" role="alert">
+              A simple alert with <a href="http://www.facebook.com/mhfaysal124" class="alert-link">an example link</a> Click here if you want.
+            </div>
+          </div>
+          <div class="col-6">
+            <h2>Additiobal content</h2>
+            <div class="alert alert-dark" role="alert">
+              <h4 class="alert-heading">Well done!</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam aut omnis adipisci a, reprehenderit deserunt tempora eveniet provident ab molestiae amet?</p>
+              <hr>
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <h2>Icons</h2>
+            <div class="alert alert-primary d-flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              <div>
+                An example alert with an icon
+              </div>
+            </div>
+            
+            <div class="alert alert-primary d-flex align-items-center" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+              <div>
+                An example alert with an icon
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h2>Dismissing</h2>
+            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+              <strong>Hello world!</strong> I am proud of you.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Alerts End-->
+
+
+    <!--Badge start-->
+    <section class="Badge">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Badge :
+          <i class="h5">#Examles: Heading, Buttons, Position. #Background colors. #Pill badges</i>
+        </h2>
+        <!--Row / col start-->
+        <div class="row">
+          <div class="col-4 border-end">
+            <h2 class="border-bottom border-4 mb-4">Examples & Headings</h2>
+            <h1>Ex_Heading <span class="badge bg-dark">MHF</span></h1>
+            <h2>Ex_Heading <span class="badge bg-success">MHF</span></h2>
+            <h3>Ex_Heading <span class="badge bg-secondary">MHF</span></h3>
+          </div>
+          <div class="col-2 border-end">
+            <h2 class="border-bottom border-4 mb-4">Buttons</h2>
+            <button type="button" class="btn btn-dark mb-5">
+              MH_Faysal <span class="badge bg-success">+99</span>
+            </button>
+            <button type="button" class="btn btn-primary">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+          </div>
+          <div class="col-2 border-end">
+            <h2 class="border-bottom border-4 mb-4">Position</h2>
+            <button type="button" class="btn btn-success position-relative mb-5">
+              MHF_Inbox
+              <span class="position-absolute bg-danger rounded-pill badge translate-middle top-0 start-100">
+                99+
+              </span>
+              <span class="visually-hidden">unread messages</span>
+            </button>
+          
+            <button type="button" class="btn btn-primary position-relative">
+              MHF_Profile
+              <span class="position-absolute bg-danger p-2 border boder-light rounded-circle start-100 top-0 translate-middle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+          </div>
+          <div class="col-2 border-end">
+            <h2 class="border-bottom border-4 mb-4">BG_colors</h2>
+            <span class="badge bg-danger mb-5 p-2">Danger</span>            
+            <span class="badge bg-primary mb-5 p-2">primary</span>            
+            <span class="badge bg-secondary mb-5 p-2">secondary</span>            
+            <span class="badge bg-success mb-5 p-2">success</span>            
+          </div>
+          <div class="col-2">
+            <h2 class="border-bottom border-4 mb-4">Pill badges</h2>
+            <span class="badge rounded-pill bg-danger p-3">_pill_badges</span>
+            <span class="badge rounded-pill bg-success mt-5 p-3">_pill_badges</span>
+          </div>
+        </div>
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Badge End-->
+
+
+    <!--Breadcrumb start-->
+    <section class="Breadcrumb">
+      <div class="container mb-3 py-4 bg-dark">
+        <h2 class="header_2 border border-2 p-2">__Breadcrumb :
+          <i class="h5">#Examles, #Dividers, #Accessibility</i>
+        </h2>
+        <!--Row / col start-->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+          </ol>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+          </ol>
+        </nav>
+
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+          </ol>
+        </nav>
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Breadcrumb End-->
+
+
+    <!--Button start-->
+    <section class="Button">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Button :
+          <i class="h5">#Examles, #Outline buttons, #Sizes, #Block buttons</i>
+        </h2>
+        <!--Row / col start-->
+        <div class="d-grid gap-3 mb-3 d-md-block">
+          <button class="btn btn-danger" type="button">Button</button>
+          <button class="btn btn-primary" type="button">Button</button>
+        </div>
+
+        <div class="d-grid gap-3 mb-3">
+          <button class="btn btn-danger" type="button">Button</button>
+          <button class="btn btn-primary" type="button">Button</button>
+        </div>
+
+        <div class="d-grid gap-3 mb-3 col-6 mx-auto">
+          <button class="btn btn-danger" type="button">Button</button>
+          <button class="btn btn-info" type="button">Button</button>
+        </div>
+
+        <button type="button" class="btn btn-primary">MH_Faysal</button>
+        <button type="button" class="btn btn-danger">MH_Faysal</button>
+        <button type="button" class="btn btn-primary btn-lg">MH_Faysal</button>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Button End-->
+
+
+    <!--Button group start-->
+    <section class="Button group">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Button group :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <div class="btn-group" fole="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btn btn-danger">mhfaysal</button>
+          <button type="button" class="btn btn-warning">mhfaysal</button>
+          <button type="button" class="btn btn-info">mhfaysal</button>
+        </div>
+
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Button group End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+    <!--Accordion start-->
+    <section class="accordion">
+      <div class="container mb-3 py-4">
+        <h2 class="header_2 border border-2 p-2">__Accordion :
+          <i class="h5">MH Fasyal, Mehedi, faysal</i>
+        </h2>
+        <!--Row / col start-->
+        <!--Row / col End-->
+      </div>
+    </section>
+    <!--Accordion End-->
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/script.js"></script>
+
+
+
+  </body>
+</html>
